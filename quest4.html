@@ -17,6 +17,10 @@
   margin-top: 0.3;
 }
 
+.big-radio {
+  width: 1.5em;
+  height: 1.5em;
+}
 
 .form-check-label {
   padding-left: 0.5em;
@@ -32,42 +36,48 @@
             <!-- Вопрос с множественным выбором -->
             <div class="card mb-5">
                 <div class="card-body">
-                    <h2 class="card-title">1. </h2>
+                    <h2 class="card-title">1. Какми животным завидовал Цыплёнок?</h2>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="" id="q1-1">
-                                <label class="form-check-label" for="q1-1"></label>
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="1" id="q1-1">
+                                <label class="form-check-label fs-4" for="q1-1">Заяц</label>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="" id="q1-2">
-                                <label class="form-check-label" for="q1-2"></label>
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="2" id="q1-2">
+                                <label class="form-check-label fs-4" for="q1-2">Козлёнок</label>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="" id="q1-3">
-                                <label class="form-check-label" for="q1-3"></label>
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="3" id="q1-3">
+                                <label class="form-check-label fs-4" for="q1-3">Телёнок</label>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="" id="q1-4">
-                                <label class="form-check-label" for="q1-4"></label>
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="4" id="q1-4">
+                                <label class="form-check-label fs-4" for="q1-4">Аист</label>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="" id="q1-5">
-                                <label class="form-check-label" for="q1-5"></label>
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="5" id="q1-5">
+                                <label class="form-check-label fs-4" for="q1-5">Гусь</label>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="" id="q1-6">
-                                <label class="form-check-label" for="q1-6"></label>
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="6" id="q1-6">
+                                <label class="form-check-label fs-4" for="q1-6">Котёнок</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-checkbox" type="checkbox" name="q1" value="7" id="q1-6">
+                                <label class="form-check-label fs-4" for="q1-6">Мышонок</label>
                             </div>
                         </div>
                     </div>
@@ -77,7 +87,7 @@
             <!-- Вопрос с вводом текста -->
             <div class="card mb-5">
                 <div class="card-body">
-                    <h2 class="card-title">2. </h2>
+                    <h2 class="card-title">2. Закончи ответ Петуха: "Потому что ты не спрашиваешь, а просто ..."</h2>
                     <input type="text" 
                            class="form-control form-control-lg" 
                            name="q2"
@@ -85,13 +95,35 @@
                 </div>
             </div>
 
-            <div class="card mb-5">
+            <div class="card mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">3. </h2>
-                    <input type="text" 
-                           class="form-control form-control-lg" 
-                           name="q3"
-                           placeholder="Введите ответ...">
+                    <h2 class="card-title">3. Как Петух разговаривал с Цыплёнком?</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="1" id="q3-1">
+                                <label class="form-check-label fs-4" for="q3-1">Сердито</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="2" id="q3-2">
+                                <label class="form-check-label fs-4" for="q3-2">Обиженно</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="3" id="q3-3">
+                                <label class="form-check-label fs-4" for="q3-3">Радостно</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="4" id="q3-4">
+                                <label class="form-check-label fs-4" for="q3-4">Расстроенно</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -102,8 +134,8 @@
             <div class="alert alert-info">
                 <h3 class="alert-heading">Результаты тестирования</h3>
                 <p id="scoreText"></p>
-                <a href="/TEST/site/site4.html" class="btn btn-danger w-100 d-none" id="errorLink">Прочитать текст заново</a>
-                <a href="/TEST/site/index.html" class="btn btn-success w-100 d-none" id="successLink">Вернуться</a>
+                <a href="site4.html" class="btn btn-danger w-100 d-none" id="errorLink">Прочитать текст заново</a>
+                <a href="index.html" class="btn btn-success w-100 d-none" id="successLink">Вернуться</a>
             </div>
         </div>
     </div>
@@ -118,9 +150,9 @@
             
             // Правильные ответы
             const correctAnswers = {
-                q1: [''],
-                q2: [''],
-                q3: ['']
+                q1: ['1','2','4','6'],
+                q2: ['завидуешь', 'всем завидуешь'],
+                q3: ['1']
             };
 
             let rightCount = 0;
@@ -154,18 +186,17 @@
             }
 
             //Проверка третьего вопроса
-            const q3Input = document.querySelector('[name="q3"]');
-            const q3Answer = q3Input.value.trim().toLowerCase();
-            const q3Card = q3Input.closest('.card');
+            const q3Answers = Array.from(document.querySelectorAll('[name="q3"]:checked'))
+                                .map(input => input.value);
+            const q3Card = document.querySelector('[name="q3"]').closest('.card');
             q3Card.classList.remove('correct', 'incorrect');
             
-            if (correctAnswers.q3.map(a => a.toLowerCase()).includes(q3Answer)) {
+            if (arraysEqual(q3Answers.sort(), correctAnswers.q3.sort())) {
                 q3Card.classList.add('correct');
                 rightCount++;
             } else {
                 q3Card.classList.add('incorrect');
             }
-
 
             // Показ результатов
             results.classList.remove('d-none');
