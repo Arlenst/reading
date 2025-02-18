@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Почему год круглый</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .indent {
+            text-indent: 1.5em; 
+            margin-bottom: 0.8rem; 
+          }
+
+        .text-overlay {
+            position: relative;
+            z-index: 2;
+        }
+
+        .vertical-line {
+            position: absolute;
+            width: 17px;
+            height: 60%;
+            background: linear-gradient(to bottom, 
+                rgba(119, 119, 119) 0%, 
+                rgba(119, 119, 119) 50%, 
+                rgba(119, 119, 119) 100%);
+            transform: translateY(-10%);
+            z-index: 1;
+        }
+
+        /* Генерация линий с разными позициями */
+        .vertical-line:nth-child(1) { left: 20%; }
+        .vertical-line:nth-child(2) { left: 27%; }
+        .vertical-line:nth-child(3) { left: 34%; }
+        .vertical-line:nth-child(4) { left: 41%; }
+        .vertical-line:nth-child(5) { left: 48%; }
+        .vertical-line:nth-child(6) { left: 55%; }
+        .vertical-line:nth-child(7) { left: 62%; }
+        .vertical-line:nth-child(8) { left: 69%; }
+        .vertical-line:nth-child(9) { left: 76%; }
+        .vertical-line:nth-child(10) { left: 83%; }
+        .vertical-line:nth-child(11) { left: 90%; }
+        .vertical-line:nth-child(12) { left: 97%; }
+    </style>
+<body>
+    <div class="d-flex h-100 flex-column">
+        <header class="header text-center">
+            <h3 class="my-6 display-3 fw-bolder">Почему год круглый</h3>
+        </header>
+    </div>   
+    
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-md p-4"></div>
+        <div class="col-6 col-md p-4"></div>
+        <div class="col-6 col-md p-4"></div>
+        <div class="col-6 col-md p-4"><p class="fs-3 fw-bolder">Н.И. Сладков</p></div>
+    </div>  
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md p-4">
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+  <p class=" fs-1 fw-semibold text-justify indent mb-4">
+   — Потому год круглый, — сказало Солнце, — что Земля вокругменя мчится по кругу. Как полный круг сделает, так и год.</p>
+    <p class=" fs-1 fw-semibold text-justify indent mb-4">— И совсем не потому! — проскрипел Дуб. — Год потому круглый, что за год на всех деревьях годовое кольцо нарастает. Как год, так новое кольцо. А кольцо — тоже круг! </p>
+    <p class=" fs-1 fw-semibold text-justify indent mb-4">— Нет, друзья, — прошептала Ёлка, — ведь всем известно, что мы, ёлки, круглый год зелёные. А как же мы могли бы быть зелёными, если бы год-то не был круглым. </p>
+    <a href="quest2.html" class="btn btn-success btn-lg w-50 h-10 fw-bolder fs-3">ПРОЧИТАНО</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
+

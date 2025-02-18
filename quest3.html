@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .correct { border: 2px solid #28a745!important; background-color: #d4edda!important; }
+        .incorrect { border: 2px solid #dc3545!important; background-color: #f8d7da!important; }
+        .disabled { pointer-events: none; opacity: 0.7; }
+
+        .big-radio {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.form-check-label {
+  padding-left: 0.5em;
+  vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Вопросы по тексту</h1>
+        
+        <form id="quizForm">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">1. Что тащил Медведь</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q1" value="Охапку дров" id="q1-1">
+                                <label class="form-check-label fs-4" for="q1-1">Охапку дров</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q1" value="Хворост" id="q1-2">
+                                <label class="form-check-label fs-4" for="q1-2">Хворост</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q1" value="Здоровенное бревно" id="q1-3">
+                                <label class="form-check-label fs-4" for="q1-3">Здоровенное бревно</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q1" value="Длинную ветку" id="q1-4">
+                                <label class="form-check-label fs-4" for="q1-4">Длинную ветку</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">2. Что сделал Кабан при встече с Медведем? </h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q2" value="1" id="q2-1">
+                                <label class="form-check-label fs-4" for="q2-1">Посмеялся над Медведем</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q2" value="2" id="q2-2">
+                                <label class="form-check-label fs-4" for="q2-2">Помог Медведю</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q2" value="3" id="q2-3">
+                                <label class="form-check-label fs-4" for="q2-3">Проигнорировал Медведя</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q2" value="4" id="q2-4">
+                                <label class="form-check-label fs-4" for="q2-4">Посочувствовал Медведю</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">3. Какова мораль этой сказки?</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="1" id="q3-1">
+                                <label class="form-check-label fs-4" for="q3-1">Не нужно говорить с первым встечным</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="2" id="q3-2">
+                                <label class="form-check-label fs-4" for="q3-2">Не нужно поднимать слишком тяжелые предметы</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="3" id="q3-3">
+                                <label class="form-check-label fs-4" for="q3-3">Нужно помогать другим</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input big-radio" type="radio" name="q3" value="4" id="q3-4">
+                                <label class="form-check-label fs-4" for="q3-4">Лучше посочувствоать, чем помочь</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100">Проверить ответы</button>
+        </form>
+
+        <div id="results" class="mt-4 d-none">
+            <div class="alert alert-info">
+                <h3 class="alert-heading">Результаты тестирования</h3>
+                <p id="scoreText"></p>
+                <a href="site3.html" class="btn btn-danger w-100 d-none" id="errorLink">Прочитать текст заново</a>
+                <a href="index.html" class="btn btn-success w-100 d-none" id="successLink">Вернуться</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Блокировка формы
+            this.classList.add('disabled');
+            document.querySelectorAll('input').forEach(input => input.disabled = true);
+            
+            // Правильные ответы
+            const correctAnswers = {
+                q1: ['Здоровенное бревно'],
+                q2: ['4'],
+                q3: ['3']
+            };
+
+            let rightCount = 0;
+            const results = document.getElementById('results');
+            const errorLink = document.getElementById('errorLink');
+
+            //Проверка первого вопроса
+            const q1Answers = Array.from(document.querySelectorAll('[name="q1"]:checked'))
+                                .map(input => input.value);
+            const q1Card = document.querySelector('[name="q1"]').closest('.card');
+            q1Card.classList.remove('correct', 'incorrect');
+            
+            if (arraysEqual(q1Answers.sort(), correctAnswers.q1.sort())) {
+                q1Card.classList.add('correct');
+                rightCount++;
+            } else {
+                q1Card.classList.add('incorrect');
+            }
+
+            // Проверка второго вопроса
+            const q2Answers = Array.from(document.querySelectorAll('[name="q2"]:checked'))
+                                .map(input => input.value);
+            const q2Card = document.querySelector('[name="q2"]').closest('.card');
+            q2Card.classList.remove('correct', 'incorrect');
+            
+            if (arraysEqual(q2Answers.sort(), correctAnswers.q2.sort())) {
+                q2Card.classList.add('correct');
+                rightCount++;
+            } else {
+                q2Card.classList.add('incorrect');
+            }
+
+            // Проверка третьего вопроса
+            const q3Answers = Array.from(document.querySelectorAll('[name="q3"]:checked'))
+                                .map(input => input.value);
+            const q3Card = document.querySelector('[name="q3"]').closest('.card');
+            q3Card.classList.remove('correct', 'incorrect');
+            
+            if (arraysEqual(q3Answers.sort(), correctAnswers.q3.sort())) {
+                q3Card.classList.add('correct');
+                rightCount++;
+            } else {
+                q3Card.classList.add('incorrect');
+            }
+
+
+            // Показ результатов
+            results.classList.remove('d-none');
+            document.getElementById('scoreText').textContent = 
+                `Правильных ответов: ${rightCount} из ${Object.keys(correctAnswers).length}`;
+            
+            errorLink.classList.toggle('d-none', rightCount === 3);
+
+            const successLink = document.getElementById('successLink');
+            successLink.classList.toggle('d-none', rightCount !== 3);
+        });
+
+        // Функция сравнения массивов
+        function arraysEqual(a, b) {
+            return a.length === b.length && a.every((val, index) => val === b[index]);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

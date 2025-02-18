@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Не стоит благодарности</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+    .indent {
+        text-indent: 1.5em; 
+        margin-bottom: 0rem;
+      }
+
+          .text-container {
+            position: relative;
+            overflow: hidden;
+            padding: 50px ;
+        }
+
+        .text-curtain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #777; /* Цвет должен совпадать с фоном страницы */
+            transform: translateY(-100%);
+            animation: curtainDrop 150s linear forwards;
+        }
+
+        @keyframes curtainDrop {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+</style>
+
+<body>
+    <div class="d-flex h-100 flex-column">
+        <header class="header text-center">
+            <h3 class="my-6 display-3 fw-bolder">Не стоит благодарности</h3>
+        </header>
+    </div>   
+    
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-md p-4"></div>
+        <div class="col-6 col-md p-4"></div>
+        <div class="col-6 col-md p-4"></div>
+        <div class="col-6 col-md p-4"><p class="fs-3 fw-bolder">С.В. Михалков</p></div>
+    </div>  
+</div>
+
+<div class="text-container">
+    <div class="row">
+        <div class="text-curtain"></div>
+        <div class="col-md p-4">
+<p class="fs-1 fw-semibold text-justify indent ">Тащил на себе старый Медведь здоровенное бревно. Замучился, присел на пенёк.</p>
+<p class="fs-1 fw-semibold text-justify indent ">- Тяжёлое небось бревно-то? - спросил молодой Кабан, что неподалеку грелся на солнцепёке.</p>
+<p class="fs-1 fw-semibold text-justify indent ">- Ух, и тяжёлое! - ответил Медведь, отдуваясь.</p>
+<p class="fs-1 fw-semibold text-justify indent ">- И далеко ещё тащить?</p>
+<p class="fs-1 fw-semibold text-justify indent ">- До самого леса.</p>
+<p class="fs-1 fw-semibold text-justify indent ">- В такую жару! Поди, умаялся?</p>
+<p class="fs-1 fw-semibold text-justify indent ">- И не спрашивай!</p>
+<p class="fs-1 fw-semibold text-justify indent ">- Такое-то бревно вдвоём бы тащить!</p>
+<p class="fs-1 fw-semibold text-justify indent ">- Ясное дело - вдвоём бы сподручнее было!</p>
+<p class="fs-1 fw-semibold text-justify indent ">- Ну, я пошёл! - сказал Кабан, поднимаясь. Желаю удачи! Да смотри не надорвись!</p>
+<p class="fs-1 fw-semibold text-justify indent ">- Спасибо, - вздохнул Медведь.</p>
+<p class="fs-1 fw-semibold text-justify indent mb-4">- Не за что! - ответил Кабан.</p>
+<a href="quest3.html" class="btn btn-success btn-lg w-50 h-10 fw-bolder fs-3">ПРОЧИТАНО</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    // Активация анимации при загрузке страницы
+    window.addEventListener('load', function() {
+        const curtain = document.querySelector('.text-curtain');
+        curtain.style.animation = 'curtainDrop 150s linear forwards';
+    });
+</script>
+</body>
+</html>
